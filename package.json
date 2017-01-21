@@ -1,0 +1,15 @@
+{
+  "name": "nebula-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "A beautifully minimal, subtly animated, and carefully designed Atom syntax theme that lets you focus on what matters: your code. For best results, use with the nebula-ui theme.",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/atom/nebula-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
