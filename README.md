@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">Nebula</h1>
 
-<p align="center">An Atom UI theme that's <em>out of this world</em>.<br>Works best with the <a href="https://github.com/tjkohli/nebula-syntax">nebula-syntax theme</a>.</p>
+<p align="center">An Atom syntax theme that's <em>out of this world</em>.<br>Works best with the <a href="https://github.com/tjkohli/nebula-ui">nebula-ui theme</a>.</p>
 
 <p align="center">
   <img src="http://tjkoh.li/q4OR/47Q3r092+" alt="Nebula theme screenshot">
@@ -14,7 +14,7 @@
   <img src="http://tjkoh.li/nmlY/12d2Hgpc+" alt="Nebula colors">
 </p>
 
-The seven colors used throughout Nebula UI and [Nebula Syntax](https://github.com/tjkohli/nebula-syntax) were painstakingly tested on more than ten different monitors (sRGB, Adobe RGB, and intentionally/unintentionally miscalibrated) to ensure breadth of gamut. The colors were also tested in a monochromatic environment to ensure their contrast levels are exactly the same, so no one color is brighter than another. Then, the colors were given one final tweak to make them a bit more beautiful.
+The seven colors used throughout [Nebula UI](https://github.com/tjkohli/nebula-ui) and Nebula Syntax were painstakingly tested on more than ten different monitors (sRGB, Adobe RGB, and intentionally/unintentionally miscalibrated) to ensure breadth of gamut. The colors were also tested in a monochromatic environment to ensure their contrast levels are exactly the same, so no one color is brighter than another. Then, the colors were given one final tweak to make them a bit more beautiful.
 
 <h2 align="center">Context-aware. Minimally invasive.</h2>
 
