@@ -1,10 +1,10 @@
 <p align="center">
   <img src="http://tjkoh.li/BQOK/1PcggwwS+" alt="Nebula logo" width="300">
 </p>
-<h1 align="center">Nebula</h1>
+<h1 align="center">Nebula Syntax</h1>
 
 <p align="center">
-  <a href="https://github.com/tjkohli/nebula-syntax"><img src="https://img.shields.io/github/release/tjkohli/nebula-syntax.svg?style=flat-square" alt="GitHub"></a>
+  <a href="https://github.com/tjkohli/nebula-syntax/releases/latest"><img src="https://img.shields.io/github/release/tjkohli/nebula-syntax.svg?style=flat-square" alt="GitHub"></a>
   <a href="https://atom.io/themes/nebula-syntax"><img src="https://img.shields.io/apm/v/nebula-syntax.svg?style=flat-square" alt="Atom"></a>
 <!--   <a href="https://atom.io/themes/nebula-syntax"><img src="https://img.shields.io/apm/dm/nebula-syntax.svg?style=flat-square" alt="Atom Downloads"></a> -->
 </p>
