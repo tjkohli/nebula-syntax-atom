@@ -1,9 +1,15 @@
 <p align="center">
-  <img src="http://tjkoh.li/9aZh/58gF7WGl+" alt="Nebula logo">
+  <img src="http://tjkoh.li/BQOK/1PcggwwS+" alt="Nebula logo" width="300">
 </p>
 <h1 align="center">Nebula</h1>
 
-<p align="center">An Atom syntax theme that's <em>out of this world</em>.<br>Works best with the <a href="https://github.com/tjkohli/nebula-ui">nebula-ui theme</a>.</p>
+<p align="center">
+  <a href="https://github.com/tjkohli/nebula-syntax"><img src="https://img.shields.io/github/release/tjkohli/nebula-syntax.svg?style=flat-square" alt="GitHub"></a>
+  <a href="https://atom.io/themes/nebula-syntax"><img src="https://img.shields.io/apm/v/nebula-syntax.svg?style=flat-square" alt="Atom"></a>
+<!--   <a href="https://atom.io/themes/nebula-syntax"><img src="https://img.shields.io/apm/dm/nebula-syntax.svg?style=flat-square" alt="Atom Downloads"></a> -->
+</p>
+
+<p align="center">An Atom syntax theme that's <em>out of this world</em>.<br>Works best with the <a href="https://github.com/tjkohli/nebula-ui">nebula-ui theme</a></p>
 
 <p align="center">
   <img src="http://tjkoh.li/q4OR/47Q3r092+" alt="Nebula theme screenshot">
