@@ -17,11 +17,12 @@ atom-text-editor {
 	}
 
 	.gutter {
-		background-color: transparent;
+		background-color: @syntax-gutter-background-color;
 		color: @syntax-gutter-text-color;
 
 		.line-number {
-			background-color: transparent;
+			cursor: pointer;
+			transition: color 0.2s ease;
 
 			&.cursor-line {
 				background-color: @syntax-gutter-background-color-selected;
@@ -46,21 +47,44 @@ atom-text-editor {
 
 	.cursor {
 		color: @syntax-cursor-color;
+		border-width: 2px;
+		transition: opacity 0.2s ease;
+	}
+
+	.cursor-line {
+		background: @syntax-gutter-background-color-selected;
 	}
 
 	.selection .region {
 		background-color: @syntax-selection-color;
 	}
+
+	.search-results {
+		.syntax--marker {
+			.region {
+				background-color: transparent;
+				border: 1px solid @syntax-result-marker-color;
+			}
+			&.current-result {
+				.region {
+					border: 1px solid @syntax-result-marker-color-selected;
+				}
+			}
+		}
+	}
+	// Plugins
+	// -------------------
+	// Custom styles for popular plugins
+
+	atom-text-editor-minimap {
+		.minimap-visible-area {
+			&::after {
+				background: fade(lighten(@dark-gray, 40%), 20%);
+			}
+		}
+	}
 }
 
-atom-text-editor .search-results .syntax--marker .region {
-	background-color: transparent;
-	border: 1px solid @syntax-result-marker-color;
-}
-
-atom-text-editor .search-results .syntax--marker.current-result .region {
-	border: 1px solid @syntax-result-marker-color-selected;
-}
 // Syntax styles
 .syntax--comment {
 	color: @subtle-gray;

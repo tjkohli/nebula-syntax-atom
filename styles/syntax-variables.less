@@ -19,13 +19,13 @@
 @syntax-result-marker-color-selected: white;
 
 // Gutter colors
-@syntax-gutter-text-color: @very-light-gray;
-@syntax-gutter-text-color-selected: @syntax-gutter-text-color;
-@syntax-gutter-background-color: @dark-gray;
-@syntax-gutter-background-color-selected: @dark-gray;
+@syntax-gutter-text-color: @light-gray;
+@syntax-gutter-text-color-selected: @very-light-gray;
+@syntax-gutter-background-color: transparent;
+@syntax-gutter-background-color-selected: fade(@gray, 20%);
 
 // For git diff info. i.e. in the gutter
 @syntax-color-renamed: @blue;
-@syntax-color-added: @green;
+@syntax-color-added: desaturate(@green, 10%);
 @syntax-color-modified: @orange;
 @syntax-color-removed: @red;
