@@ -113,6 +113,7 @@
 
 <hr>
 
+<br>
 <p align="center">
 	<a href="http://www.tjkohli.com/" title="Made with <3 by TJ Kohli">
 		<img src="http://tjkoh.li/15T2G/5ICxHe96+" align="center" width="50" alt="Made with <3 by TJ Kohli">
