@@ -22,16 +22,6 @@
 
 The seven colors used throughout [Nebula UI](https://github.com/tjkohli/nebula-ui) and Nebula Syntax were painstakingly tested on more than ten different monitors (sRGB, Adobe RGB, and intentionally/unintentionally miscalibrated) to ensure breadth of gamut. The colors were also tested in a monochromatic environment to ensure their contrast levels are exactly the same, so no one color is brighter than another. Then, the colors were given one final tweak to make them a bit more beautiful.
 
-<h2 align="center">Context-aware. Minimally invasive.</h2>
-
-Modals fly above your code. Inputs come to life when activated. Non-editor panes slowly fade into the deep blue-gray background when you're not working in them. Every little detail has been visited, and revisited.
-
-<p align="center">
-  <img src="http://tjkoh.li/EoKQ/1zrgqdez+" alt="Search">
-  <br>
-  <img src="http://tjkoh.li/deT/3HRNDq60+" alt="Settings">
-</p>
-
 <p align="center">
   <img src="http://i.giphy.com/12BQyrHqrBij9C.gif" alt="Error Pulsing">
   <br>
