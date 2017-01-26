@@ -1,3 +1,1 @@
-## 0.1.0 - First Release
-* Every feature added
-* Every bug fixed
+Release notes can be found at https://github.com/tjkohli/nebula-syntax/releases
