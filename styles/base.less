@@ -7,7 +7,6 @@ atom-text-editor {
 	.wrap-guide {
 		background-color: @syntax-wrap-guide-color;
 	}
-
 	.indent-guide {
 		color: @syntax-indent-guide-color;
 	}
@@ -15,6 +14,8 @@ atom-text-editor {
 	.invisible-character {
 		color: @syntax-invisible-character-color;
 	}
+
+	// column that displays line numbers
 
 	.gutter {
 		background-color: @syntax-gutter-background-color;
@@ -47,8 +48,7 @@ atom-text-editor {
 
 	.cursor {
 		color: @syntax-cursor-color;
-		border-width: 2px;
-		transition: opacity 0.2s ease;
+		// rest of .cursor styles --> nebula-ui
 	}
 
 	.cursor-line {
@@ -78,6 +78,7 @@ atom-text-editor {
 
 	atom-text-editor-minimap {
 		.minimap-visible-area {
+			// the scrolling shape denoting current scroll position
 			&::after {
 				background: fade(lighten(@dark-gray, 40%), 20%);
 			}
@@ -87,11 +88,26 @@ atom-text-editor {
 
 // Syntax styles
 .syntax--comment {
-	color: @subtle-gray;
-	transition: color 0.2s ease;
-	&:hover,
-	.cursor-line & {
-		color: @light-gray;
+	color: lighten(@light-gray, 10%);
+	transition: opacity 0.3s ease;
+}
+atom-workspace[theme-nebula-ui-focusmode=enabled] {
+	.syntax--comment {
+		opacity: 0.5;
+		transform: translate3d(0,0,0);
+	}
+	.line:hover,
+	.cursor-line {
+
+		// brightens the next comment line (splash fade effect)
+		+ .line {
+			.syntax--comment {
+				opacity: 0.7;
+			}
+		}
+		.syntax--comment {
+			opacity: 1;
+		}
 	}
 }
 
@@ -189,7 +205,7 @@ atom-text-editor {
 .syntax--punctuation {
 	&.syntax--definition {
 		&.syntax--comment {
-			color: @subtle-gray;
+			color: lighten(@light-gray, 10%);
 		}
 
 		&.syntax--array,
