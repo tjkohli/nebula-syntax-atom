@@ -98,7 +98,6 @@ atom-workspace[theme-nebula-ui-focusmode=enabled] {
 	}
 	.line:hover,
 	.cursor-line {
-
 		// brightens the next comment line (splash fade effect)
 		+ .line {
 			.syntax--comment {
@@ -180,8 +179,6 @@ atom-workspace[theme-nebula-ui-focusmode=enabled] {
 	}
 }
 .syntax--invalid.syntax--illegal {
-	// background-color: @red;
-	// color: @syntax-background-color;
 	box-shadow: inset 0 -1px 0 red, 0 7px 14px fade(red, 10%);
 	animation: pulse 2s ease infinite;
 }
@@ -212,7 +209,7 @@ atom-workspace[theme-nebula-ui-focusmode=enabled] {
 		&.syntax--parameters,
 		&.syntax--variable,
 		&.syntax--bracket {
-			color: @light-gray;
+			color:lighten(@light-gray, 10%);
 		}
 		&.syntax--string {
 			color: @light-orange;
