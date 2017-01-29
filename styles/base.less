@@ -174,7 +174,7 @@ atom-workspace[theme-nebula-ui-focusmode=enabled] {
 @keyframes pulseError {
 	0%,100% {
 		box-shadow: inset 0 -1px 0 @background-color-error,
-      0 7px 14px fade(@background-color-error, 10%);
+			0 7px 14px fade(@background-color-error, 10%);
 	}
 	50% {
 		box-shadow: inset 0 -1px 0 transparent, 0 7px 14px transparent;
@@ -183,7 +183,7 @@ atom-workspace[theme-nebula-ui-focusmode=enabled] {
 @keyframes pulseWarning {
 	0%,100% {
 		box-shadow: inset 0 -1px 0 @background-color-warning,
-      0 7px 14px fade(@background-color-warning, 10%);
+			0 7px 14px fade(@background-color-warning, 10%);
 	}
 	50% {
 		box-shadow: inset 0 -1px 0 transparent, 0 7px 14px transparent;
@@ -192,25 +192,25 @@ atom-workspace[theme-nebula-ui-focusmode=enabled] {
 @keyframes pulseInfo {
 	0%,100% {
 		box-shadow: inset 0 -1px 0 @background-color-info,
-      0 7px 14px fade(@background-color-info, 10%);
+			0 7px 14px fade(@background-color-info, 10%);
 	}
 	50% {
 		box-shadow: inset 0 -1px 0 transparent, 0 7px 14px transparent;
 	}
 }
 atom-text-editor.editor .linter-highlight, .linter-highlight {
-  &.error .region {
-    border-bottom: none;
-    animation: pulseError 2s ease infinite;
-  }
-  &.warning .region {
-    border-bottom: none;
-    animation: pulseWarning 2s ease infinite;
-  }
-  &.trace .region, &.info .region {
-    border-bottom: none;
-    animation: pulseInfo 2s ease infinite;
-  }
+	&.error .region {
+		border-bottom: none;
+		animation: pulseError 2s ease infinite;
+	}
+	&.warning .region {
+		border-bottom: none;
+		animation: pulseWarning 2s ease infinite;
+	}
+	&.trace .region, &.info .region {
+		border-bottom: none;
+		animation: pulseInfo 2s ease infinite;
+	}
 }
 .syntax--invalid.syntax--illegal, .spell-check-misspelling .region {
 	border-bottom: none;
