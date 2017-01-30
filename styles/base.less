@@ -171,34 +171,36 @@ atom-workspace[theme-nebula-ui-focusmode=enabled] {
 	}
 }
 
-@keyframes pulseError {
-	0%,100% {
-		box-shadow: inset 0 -1px 0 @background-color-error,
-			0 7px 14px fade(@background-color-error, 10%);
-	}
-	50% {
-		box-shadow: inset 0 -1px 0 transparent, 0 7px 14px transparent;
+.highlight-underline(@color) {
+	border-bottom: none;
+	box-shadow: inset 0 -1px 0 @color, 0 7px 14px fade(@color, 10%);
+}
+.highlight-underline(@color1; @color2) {
+	@name: replace("pulse-underline-@{color1}", "#", "");
+
+	animation: ~"@{name}" 2s ease infinite;
+	@keyframes ~"@{name}" {
+		0%, 100% {
+			.highlight-underline(@color1);
+		}
+		50% {
+			.highlight-underline(@color2);
+		}
 	}
 }
 atom-text-editor.editor .linter-highlight, .linter-highlight {
 	&.error .region {
-		border-bottom: none;
-		animation: pulseError 2s ease infinite;
+		.highlight-underline(@background-color-error, transparent);
 	}
 	&.warning .region {
-		border-bottom: none;
-		box-shadow: inset 0 -1px 0 @background-color-warning,
-			0 7px 14px fade(@background-color-warning, 10%);
+		.highlight-underline(@background-color-warning);
 	}
 	&.trace .region, &.info .region {
-		border-bottom: none;
-		box-shadow: inset 0 -1px 0 @background-color-info,
-			0 7px 14px fade(@background-color-info, 10%);
+		.highlight-underline(@background-color-info);
 	}
 }
 .syntax--invalid.syntax--illegal, .spell-check-misspelling .region {
-	border-bottom: none;
-	animation: pulseError 2s ease infinite;
+	.highlight-underline(@background-color-error, transparent);
 }
 
 .syntax--string {
