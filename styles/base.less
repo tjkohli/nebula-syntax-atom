@@ -190,7 +190,7 @@ atom-workspace[theme-nebula-ui-focusmode=enabled] {
 }
 atom-text-editor.editor .linter-highlight, .linter-highlight {
 	&.error .region {
-		.highlight-underline(@background-color-error, transparent);
+		.highlight-underline(@background-color-error; transparent);
 	}
 	&.warning .region {
 		.highlight-underline(@background-color-warning);
@@ -200,7 +200,7 @@ atom-text-editor.editor .linter-highlight, .linter-highlight {
 	}
 }
 .syntax--invalid.syntax--illegal, .spell-check-misspelling .region {
-	.highlight-underline(@background-color-error, transparent);
+	.highlight-underline(@background-color-error; transparent);
 }
 
 .syntax--string {
