@@ -72,18 +72,6 @@ atom-text-editor {
 			}
 		}
 	}
-	// Plugins
-	// -------------------
-	// Custom styles for popular plugins
-
-	atom-text-editor-minimap {
-		.minimap-visible-area {
-			// the scrolling shape denoting current scroll position
-			&::after {
-				background: fade(lighten(@dark-gray, 40%), 20%);
-			}
-		}
-	}
 }
 
 // Syntax styles
@@ -370,8 +358,15 @@ atom-workspace[theme-nebula-ui-focusmode=enabled] {
 		font-style: italic;
 	}
 
-	&.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
-		color: @blue;
+	&.syntax--heading {
+		.syntax--punctuation {
+			&.syntax--definition {
+				&.syntax--heading {
+					color: @blue;
+				}
+			}
+
+		}
 	}
 
 	&.syntax--inserted {
