@@ -2,7 +2,7 @@
   "name": "nebula-syntax",
   "author": "TJ Kohli <hello@tjkohli.com>",
   "theme": "syntax",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "description": "A beautifully minimal, subtly animated, and carefully designed Atom syntax theme that lets you focus on what matters: your code. For best results, use with the nebula-ui theme.",
   "keywords": [
     "atom",
